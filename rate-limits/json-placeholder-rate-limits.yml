@@ -1,0 +1,21 @@
+name: JSONPlaceholder Rate Limits
+description: JSONPlaceholder does not publish formal rate limits. The service is designed as a free, open testing API and handles approximately 3 billion requests per month globally. No throttling or quota enforcement is documented; however, the service is a shared public resource and should be used responsibly.
+rateLimits:
+  - plan: Free
+    documented: false
+    notes: >
+      No official rate limits are published. The API is a public good and operates on an honor system. Developers are encouraged to avoid hammering the service with automated high-frequency requests. For high-volume or production-like testing scenarios, consider running a local instance of json-server (the underlying technology) or using a dedicated mock API service.
+    requests:
+      perSecond: unspecified
+      perMinute: unspecified
+      perHour: unspecified
+      perDay: unspecified
+      perMonth: unspecified
+    headers:
+      rateLimitRemaining: not provided
+      rateLimitReset: not provided
+      rateLimitLimit: not provided
+recommendations:
+  - Use the API for development and prototyping only, not production traffic
+  - For sustained load testing, run a local instance via npm install -g json-server
+  - Be a good citizen — avoid scripts that generate thousands of requests per minute

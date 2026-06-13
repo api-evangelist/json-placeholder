@@ -1,0 +1,55 @@
+aid: json-placeholder
+name: JSONPlaceholder
+description: Free fake REST API for testing and prototyping providing mock data for posts, comments, albums, photos, todos, and users without any setup. Handles approximately 3 billion requests per month and supports all standard HTTP methods with CORS and JSONP support.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/json-placeholder/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Fake API
+  - Testing
+  - Prototyping
+  - Mock Data
+  - REST
+  - Open Source
+apis:
+  - aid: json-placeholder:json-placeholder-api
+    name: JSONPlaceholder API
+    description: A free fake REST API offering six resource types — posts, comments, albums, photos, todos, and users — with relational data and support for GET, POST, PUT, PATCH, and DELETE operations. Write operations are simulated and not persisted.
+    humanURL: https://jsonplaceholder.typicode.com
+    baseURL: https://jsonplaceholder.typicode.com
+    tags:
+      - Fake API
+      - Testing
+      - Mock Data
+      - REST
+    properties:
+      - type: Documentation
+        url: https://jsonplaceholder.typicode.com/guide/
+      - type: OpenAPI
+        url: https://github.com/sebastienlevert/jsonplaceholder-api/blob/main/openapi.yaml
+common:
+  - type: Website
+    url: https://jsonplaceholder.typicode.com
+  - type: Documentation
+    url: https://jsonplaceholder.typicode.com/guide/
+  - type: GitHubOrg
+    url: https://github.com/typicode
+  - type: GitHubRepository
+    url: https://github.com/typicode/jsonplaceholder
+  - type: Blog
+    url: https://blog.typicode.com
+  - type: Pricing
+    url: https://jsonplaceholder.typicode.com
+  - type: X
+    url: https://x.com/typicode
+  - type: Plans
+    url: plans/json-placeholder-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/json-placeholder-rate-limits.yml
+  - type: FinOps
+    url: finops/json-placeholder-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

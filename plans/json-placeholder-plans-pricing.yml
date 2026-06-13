@@ -1,0 +1,28 @@
+name: JSONPlaceholder Plans and Pricing
+description: JSONPlaceholder is a completely free fake REST API for testing and prototyping. There are no paid plans, subscription tiers, or pricing structures. The service is open and freely available to all developers without registration or API keys.
+plans:
+  - name: Free
+    description: Full access to all JSONPlaceholder endpoints at no cost. No registration, API keys, or configuration required. All HTTP methods supported including GET, POST, PUT, PATCH, and DELETE.
+    price: 0
+    currency: USD
+    billing: none
+    features:
+      - Access to all 6 resource types (posts, comments, albums, photos, todos, users)
+      - All HTTP methods (GET, POST, PUT, PATCH, DELETE, OPTIONS)
+      - CORS and JSONP support
+      - Nested route support
+      - Query parameter filtering
+      - No registration required
+      - No API key required
+      - HTTPS support
+    limits:
+      requests: unlimited
+      resources:
+        posts: 100
+        comments: 500
+        albums: 100
+        photos: 5000
+        todos: 200
+        users: 10
+notes: >
+  JSONPlaceholder is maintained by typicode as a community resource. Write operations (POST, PUT, PATCH, DELETE) are faked — data is not actually persisted on the server. For persistent fake APIs, the maintainer recommends Mockend, which integrates with GitHub repositories.
