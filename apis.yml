@@ -1,7 +1,7 @@
 aid: json-placeholder
 name: JSONPlaceholder
 description: Free fake REST API for testing and prototyping providing mock data for posts, comments, albums, photos, todos, and users without any setup. Handles approximately 3 billion requests per month and supports all standard HTTP methods with CORS and JSONP support.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/json-placeholder/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
