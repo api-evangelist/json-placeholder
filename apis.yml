@@ -30,6 +30,8 @@ apis:
       - type: OpenAPI
         url: https://github.com/sebastienlevert/jsonplaceholder-api/blob/main/openapi.yaml
 common:
+  - type: DomainSecurity
+    url: security/json-placeholder-domain-security.yml
   - type: Website
     url: https://jsonplaceholder.typicode.com
   - type: Documentation
