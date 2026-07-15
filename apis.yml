@@ -30,6 +30,8 @@ apis:
       - type: OpenAPI
         url: https://github.com/sebastienlevert/jsonplaceholder-api/blob/main/openapi.yaml
 common:
+  - type: AgenticAccess
+    url: agentic-access/json-placeholder-agentic-access.yml
   - type: DomainSecurity
     url: security/json-placeholder-domain-security.yml
   - type: Website
