@@ -1,33 +1,11 @@
-openapi: '3.0.2'
+openapi: 3.0.2
 info:
-  title: JSONPlaceholder
+  title: JSONPlaceholder Posts API
   version: '1.0'
 servers:
-  - url: https://jsonplaceholder.typicode.com/
-
-components:
-  schemas:
-    post:
-      type: object
-      properties:
-        userId:
-          type: integer
-        id:
-          type: integer
-        title:
-          type: string
-        body:
-          type: string
-  parameters:
-    post-id:
-      name: post-id
-      in: path
-      description: 'key: id of post'
-      required: true
-      style: simple
-      schema:
-        type: integer
-
+- url: https://jsonplaceholder.typicode.com/
+tags:
+- name: Posts
 paths:
   /posts:
     get:
@@ -59,8 +37,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/post'
+      tags:
+      - Posts
     post:
-      description: 'Create post'
+      description: Create post
       requestBody:
         required: true
         content:
@@ -74,9 +54,11 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/post'
+      tags:
+      - Posts
   /posts/{post-id}:
     get:
-      description: 'Get post by ID'
+      description: Get post by ID
       parameters:
       - $ref: '#/components/parameters/post-id'
       responses:
@@ -86,8 +68,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/post'
+      tags:
+      - Posts
     patch:
-      description: 'Update post'
+      description: Update post
       requestBody:
         required: true
         content:
@@ -103,10 +87,36 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/post'
+      tags:
+      - Posts
     delete:
-      description: 'Delete post'
+      description: Delete post
       parameters:
       - $ref: '#/components/parameters/post-id'
       responses:
         '200':
           description: OK
+      tags:
+      - Posts
+components:
+  schemas:
+    post:
+      type: object
+      properties:
+        userId:
+          type: integer
+        id:
+          type: integer
+        title:
+          type: string
+        body:
+          type: string
+  parameters:
+    post-id:
+      name: post-id
+      in: path
+      description: 'key: id of post'
+      required: true
+      style: simple
+      schema:
+        type: integer
