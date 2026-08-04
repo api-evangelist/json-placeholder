@@ -1,0 +1,14 @@
+{
+  "provider": "json-placeholder",
+  "sources": [
+    "json-placeholder-posts-api-openapi.yml"
+  ],
+  "outputs": [
+    "json-placeholder-posts-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
